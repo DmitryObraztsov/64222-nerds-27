@@ -13,15 +13,11 @@
         </a>
         <ul>
           <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li>
-             <button type="button">Корзина</button>
-           </li>
-        </ul>
+          <a href="#">Корзина</a>
       </nav>
     </header>
 <!-- end header -->
@@ -29,62 +25,112 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <aside>
+        <div>
+          <div>Стоимость: </div>
+          <input type="range" min="0" max="20000" step="100" value="0">
+          <div>
+            <p>от</p>
+            <input type="text" value="0">
+            <p>до</p>
+            <input type="text" value="15000">
+          </div>
+        </div>
         <form>
-          <h3>Сетка:</h3>
-          <p>
-          <input type="radio" id="adaptive">Адаптивная<br>
-          <input type="radio" id="fixed">Фиксированная<br>
-          <input type="radio" id="rubber">Резиновая</p>
-        </form>
-        <form>
-          <h3>Особенности</h3>
-          <p>
-          <input type="checkbox" checked>Слайдер<br>
-          <input type="checkbox" >Блок преимуществ<br>
-          <input type="checkbox" checked>Новости<br>
-          <input type="checkbox" >Галерея<br>
-          <input type="checkbox" >Корзина</p>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <input type="radio" id="adaptive">Адаптивная<br>
+            <input type="radio" id="fixed">Фиксированная<br>
+            <input type="radio" id="rubber">Резиновая</fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <input type="checkbox" checked>Слайдер<br>
+            <input type="checkbox" >Блок преимуществ<br>
+            <input type="checkbox" checked>Новости<br>
+            <input type="checkbox" >Галерея<br>
+            <input type="checkbox" >Корзина</fieldset>
         </form>
         <button type="button">Показать</button>
       </aside>
 <!-- end filtes -->
       <section>
-        <div>
-          <div>
+        <ul>
+          <p>Сортировать:</p>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По названию</li>
+        </ul>
+        <ul>
+          <li>
             <img src="img/sedona.jpg" width="360px" height="576px">
             <div>
-              <h3>Sedona</h3>
+              <h3><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
               <a href="#">9 900 руб.</a>
             </div>
-          </div>
-          <div>
+          </li>
+          <li>
             <img src="img/pink.jpg" width="360px" height="576px">
-          </div>
-          <div>
+            <div>
+              <h3><a href="#">Pink</a></h3>
+              <p>Сайт приложения</p>
+              <a href="#">8 000 руб.</a>
+            </div>
+          </li>
+          <li>
             <img src="img/barbershop.jpg" width="360px" height="576px">
-          </div>
-          <div>
+            <div>
+              <h3><a href="#">Barbershop</a></h3>
+              <p>Сайт барбершопа</p>
+              <a href="#">11 900 руб.</a>
+            </div>
+          </li>
+          <li>
             <img src="img/mishka.jpg" width="360px" height="576px">
-          </div>
-          <div>
+            <div>
+              <h3><a href="#">Mishka</a></h3>
+              <p>Сайт хэндмейд товаров</p>
+              <a href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li>
             <img src="img/aplus.jpg" width="360px" height="576px">
-          </div>
-          <div>
+            <div>
+              <h3><a href="#">Aplus</a></h3>
+              <p>Сайт онлайн-школы</p>
+              <a href="#">13 900 руб.</a>
+            </div>
+          </li>
+          <li>
             <img src="img/kvast.jpg" width="360px" height="576px">
-          </div>
-        </div>
+            <div>
+              <h3><a href="#">Kvast</a></h3>
+              <p>Сайт про квас (жаль не пивко)</p>
+              <a href="#">7 900 руб.</a>
+            </div>
+          </li>
+        </ul>
       </section>
+<!-- start map -->
+      <div>
+        <div>
+          <p>NЁRDS DESIGN STUDIO</p>
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button type="button">Напишите нам</button>
+        </div>
+        <img src="img/map-marker.svg" alt="Месторасположение NЁRDS">
+        <script></script>
+      </div>
+<!-- end map -->
     </main>
 <!--start footer-->
       <footer>
-        <div>
           <ul>
             <li><a href="#">Вконтакте</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
           </ul>
-        </div>
         <div>
           <p>Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
