@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
 <!-- start header -->
@@ -111,66 +112,71 @@
           </ul>
         </section>
       </div>
-      <hr class="divider">
 <!-- end description -->
 <!-- start clients -->
       <section class="clients">
         <ul class="clients-list">
-          <li><img src="img/htmlacademy-logo.png" alt="Логотип htmlacademy"></li>
-          <li><img src="img/barbershop-logo.png" alt="Логотип барбершопа"></li>
-          <li><img src="img/pink-logo.png" alt="Логотип Pink"></li>
-          <li><img src="img/mishka-logo.png" alt="Логотип Mishka"></li>
+          <li><a href="#"><img src="img/htmlacademy-logo.png" alt="Логотип htmlacademy"></a></li>
+          <li><a href="#"><img src="img/barbershop-logo.png" alt="Логотип барбершопа"></a></li>
+          <li><a href="#"><img src="img/pink-logo.png" alt="Логотип Pink"></a></li>
+          <li><a href="#"><img src="img/mishka-logo.png" alt="Логотип Mishka"></a></li>
         </ul>
       </section>
 <!-- end clients -->
 <!-- start map -->
-      <div class="wrapper-map">
+      <div class="wrapper-map" id="map">
         <div class="wrapper-contacts">
-          <div class="contacts">
-            <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
-            <p class="contacts-adress">191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8<br>
-              <br>
-              тел. +7 (812) 275-75-75</p>
-            <button class="contacts-button" type="button">Напишите нам</button>
+          <div class="wrapper-form">
+            <div class="contacts">
+              <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+              <p class="contacts-adress">191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8<br>
+                <br>
+                тел. +7 (812) 275-75-75</p>
+              <button class="contacts-button" type="button">Напишите нам</button>
+            </div>
           </div>
+          <img class="map-marker" src="img/map-marker.png" alt="Месторасположение NЁRDS">
         </div>
-        <img class="map-marker" src="img/map-marker.png" alt="Месторасположение NЁRDS">
         <script></script>
       </div>
 <!-- end map -->
 <!-- start popup -->
-      <form method="post" name="popup" class="feedback">
-        <p>Напишите нам</p>
-        <span></span>
-        <p>
+      <form method="get" name="popup" class="feedback">
+        <p class="feedback-title full-width">Напишите нам</p>
+        <span class="close-feedback"></span>
+        <p class="feedback-name">
           <label for="user-name-field">Ваше имя:</label>
           <input type="text" id="user-name-field" name="username" placeholder="Имя Фамилия">
         </p>
-        <p>
-          <label for="user-mail-field">Ваш e-mail</label>
+        <p class="feedback-mail">
+          <label for="user-mail-field">Ваш e-mail:</label>
           <input type="email" id="user-mail-field" name="usermale" placeholder="email@example.com">
         </p>
-        <p>
-          <label for="user-text-field"></label>
-          <textarea type="text" id="user-text-field" name="usertext" placeholder="В свободной форме"></textarea>
+        <p class="feedback-text full-width">
+          <label for="user-text-field">Текст письма:</label>
+          <textarea id="user-text-field" name="usertext" placeholder="В свободной форме"></textarea>
         </p>
-        <button>Отправить</button>
+        <button class="feedback-button">Отправить</button>
       </form>
     </main>
 <!-- end popup -->
 <!-- start footer -->
       <footer class="footer">
-        <ul class="social-icons">
-          <li class="social-icons__item"><a href="#"><img src="img/vk-icon.svg"></a></li>
-          <li class="social-icons__item"><a href="#"><img src="img/fb-icon.svg"></a></li>
-          <li class="social-icons__item"><a href="#"><img src="img/insta-icon.svg"></a></li>
-        </ul>
-        <div>
-          <p class="tagline">Давайте дружить, это выгодно!</p>
-          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="wrapper-footer">
+          <ul class="social-icons">
+            <li class="social-icons__item"><a href="#"><img src="img/vk-icon.svg" alt="Vk"></a></li>
+            <li class="social-icons__item"><a href="#"><img src="img/fb-icon.svg" alt="Fb"></a></li>
+            <li class="social-icons__item"><a href="#"><img src="img/insta-icon.svg" alt="Inst"></a></li>
+          </ul>
+          <div>
+            <p class="tagline">Давайте дружить, это выгодно!</p>
+            <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </footer>
-<!-- start footer -->
+<!-- end footer -->
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU" type="text/javascript"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>
