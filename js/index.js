@@ -1,4 +1,3 @@
-// Form opening, closure and animation for error indication
 document.querySelector(".contacts-button").onclick = function(e) {
     e.preventDefault();
     let popup = document.querySelector(".feedback");
